@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Table from '/Users/treyyoung/playground/car_front_end_project/car_front_end/src/Components/table.js'
+import Table from './Components/table.js';
+import Header from './Components/header.js';
+import Footer from './Components/Footer.js';
 
 class App extends Component {
   state = {
@@ -16,7 +18,9 @@ class App extends Component {
   render() {
     return (
       <>
+      <Header />
       <Table cars={this.state.cars} />
+      <Footer />
       </>
     );
   }
